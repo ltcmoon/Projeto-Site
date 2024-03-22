@@ -1,0 +1,252 @@
+/*Reset CSS*/
+/* * {
+ margin: 0;
+ padding: 0;
+ box-sizing: 0;
+} */
+body {
+    font-family: "Roboto", sans-serif;
+    color: 444;
+   }
+   header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+   }
+   .logo img {
+    width: 211px
+   }
+   .sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .sign-in button {
+    border:none;
+   }
+   input[type="text"],
+   input[type="email"],
+   input[type="password"]{
+    width: 180px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+   }
+   .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+   }
+   .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   }
+   .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+   }
+   /*margens */
+   section {
+    padding: 3rem 0 4rem 0;
+   }
+   h1 {
+    font-size: 3 rem;
+    font-weight: normal;
+   }
+   h1.title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+   }
+   .gray {
+    background-color: #f7f7f7;
+   }
+   /* color zilla */
+   .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1rem;
+   }
+   .hero {
+    width: 60%;
+    margin: auto;
+   }
+   .intro p {
+    margin: 1rem 0;
+    font-size: 1.5 rem;
+    font-weight: 100;
+   }
+   .intro .cta {
+    margin: 2rem 0;
+   }
+   .button {
+    /* background-color: #3396f3;
+    color: white; */
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+   }
+   .button:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+   }
+   .primary {
+    background-color: #3396f3;
+    color: white;
+   }
+   .secundary {
+    background-color: white;
+    color: #444;
+   }
+   .Cards {
+    display: flex;
+    justify-content: space-between;
+   }
+   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 18%;
+    height: 150px;
+   
+    border-radius: 10px;
+    color: white;
+    font-size: 1.7rem;}
+   
+   .card.red {
+    background-color: #ec454e;
+   }
+   .card.blue {
+    background-color: #42b0f8;
+   }
+   .card.purple {
+    background-color: #9e69d5;
+   }
+   .card.yellow {
+    background-color: #f4a823;
+   }
+   .card.green {
+    background-color: #3cbfa1;
+   }
+   .members {
+    display: flex;
+   justify-content: space-between;
+   }
+   .member img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+   }
+   footer {
+    background-color: #3788bf;
+   }
+   footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem ;
+    list-style-type: none;
+   }
+   footer a {
+    color: white
+   }
+   footer p.copyright {
+    padding: 3rem 0;
+    color: #ffffffdd;
+    text-align: center;
+   }
+   Código HTML
+   <!DOCTYPE html>
+  
+   <html lang="pt">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Massa</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    rel="stylesheet"
+   
+   href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+    />
+    </head>
+    <body>
+    <header>
+    <div class="logo">
+    <img src="/images/logo.png" alt="" />
+    </div>
+    <div class="sign-in">
+    <form action="#">
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Senha"/>
+   
+    <button type="submit" class="button primary">Entrar</button>
+    </form>
+    </div>
+    </header>
+    <main>
+    <section class="intro gray">
+    <div class="container">
+    <div class="hero">
+    <h1>
+    Ajudamos <strong>programadores</strong> a conseguirem seus
+    <strong>primeiros empregos</strong>.
+    </h1>
+    <p>
+    Mais de 100 mil desenvolvedores já conseguiram o seu primeiro emprego
+    usando nossa plataforma!
+    </p>
+    <div class="cta">
+    <a href="#" class="button primary">Sou programador</a>
+    <a href="#" class="button secundary">Somos empresa e estamos contratando</a>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="languages">
+    <div class="container">
+    <h1 class="title">Linguagens</h1>
+    <div class="Cards">
+    <div class="card red">Ruby</div>
+    <div class="card blue">JavaScript</div>
+    <div class="card purple">Elixir</div>
+    <div class="card yellow">Python</div>
+    <div class="card green">Go</div>
+    </div>
+    </section>
+    <section class="team gray">
+    <div class = "container">
+    <h1 class="title">Nosso time</h1>
+    <div class="members">
+    <div class="member"><img src="/images/team/walter.jpg" /></div>
+    <div class="member"><img src="/images/team/jesse.jpg" /></div>
+    <div class="member"><img src="/images/team/skyler.jpg" /></div>
+    <div class="member"><img src="/images/team/hank.jpg" /></div>
+    <div class="member"><img src="/images/team/gus.jpg" /></div>
+    <div class="member"><img src="/images/team/mike.jpg" /></div>
+    <div class="member"><img src="/images/team/saul.jpg" /></div>
+    </div>
+    </div>
+    </section>
+    </main>
+    <footer>
+    <div class="container">
+    <ul>
+    <li><a href="#">Política de privacidade</a></li>
+    <li><a href="#">Carreira</a></li>
+    <li><a href="#">LinkedIn</a></li>
+    <li><a href="#">Youtub</a></li>
+    <li><a href="#">Facebook</a></li>
+    </ul>
+    <p class="copyright">Massa, Todos os direitos reservados</p>
+    <!-- <p class = "copyright">Developed by Cleber Feitosa</p> -->
+    </div>
+    </footer>
+    </body>
+   </html>
+
